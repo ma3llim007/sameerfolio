@@ -2,7 +2,7 @@ import { Command } from "lucide-react";
 
 const Header = () => {
     return (
-        <div className="fixed top-0 left-0 right-0 z-50 bg-black/10 backdrop-blur-sm border-b border-white/10 shadow-md shadow-gray-700 transition-all duration-300">
+        <div className="fixed top-0 left-0 right-0 z-50 bg-black/10 backdrop-blur-sm border-b border-white/10 transition-all duration-300">
             <div className="grid grid-cols-2 items-center px-6 md:px-12 h-14 max-w-full mx-auto">
                 {/* Logo Section */}
                 <div className="w-[160px] h-[40px] flex items-center">
