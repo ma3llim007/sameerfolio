@@ -1,4 +1,4 @@
-import { Command } from "lucide-react";
+import { MdKeyboardCommandKey } from "react-icons/md";
 
 const Header = () => {
     return (
@@ -10,7 +10,9 @@ const Header = () => {
                 </div>
                 <nav className="flex items-center justify-end gap-6">
                     <ul className="hidden md:flex items-center gap-6 font-semibold text-lg">
-                        <li className="hover:text-primary transition">Home</li>
+                        <li className="hover:text-primary transition">
+                            <a href="#home">Home</a>
+                        </li>
                         <li className="hover:text-primary transition">
                             <a href="#skills">Skills</a>
                         </li>
@@ -19,7 +21,7 @@ const Header = () => {
                         <li className="hover:text-primary transition">Contact</li>
                     </ul>
                     <div className="p-2 group hover:bg-gray-200 rounded-full transition-all cursor-pointer">
-                        <Command size={24} className="group-hover:text-black" />
+                        <MdKeyboardCommandKey size={24} className="group-hover:text-black" />
                     </div>
                 </nav>
             </div>

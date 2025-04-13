@@ -2,11 +2,11 @@ import { motion } from "framer-motion";
 import Container from "./Container";
 import { TypeAnimation } from "react-type-animation";
 import profile from "../assets/profile.jpg";
-import { CloudDownload, Github, Instagram, Linkedin } from "lucide-react";
+import { FaCloudDownloadAlt, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 const Hero = () => {
     return (
-        <div className="w-full bg-gradient-to-r from-purple-900 via-indigo-900 to-blue-900 text-white backdrop-blur-md">
+        <div className="w-full bg-gradient-to-r from-purple-900 via-indigo-900 to-blue-900 text-white backdrop-blur-md" id="home">
             <div className="w-full bg-black/50">
                 <Container>
                     <div className="flex flex-col-reverse md:flex-row items-center justify-center text-center lg:text-start gap-12 py-5">
@@ -35,7 +35,7 @@ const Hero = () => {
                                     download
                                     className="inline-flex items-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg font-medium transition duration-200 shadow-md"
                                 >
-                                    Resume <CloudDownload className="w-5 h-5" />
+                                    Resume <FaCloudDownloadAlt className="w-5 h-5" />
                                 </a>
                                 <a
                                     href="https://www.linkedin.com/in/mohdsameer-dev/"
@@ -44,7 +44,7 @@ const Hero = () => {
                                     aria-label="LinkedIn"
                                     className="w-10 h-10 flex items-center justify-center rounded-full bg-[#0077b5] hover:scale-110 transition-transform duration-300 shadow-lg"
                                 >
-                                    <Linkedin className="w-6 h-6 text-white" />
+                                    <FaLinkedin className="w-6 h-6 text-white" />
                                 </a>
 
                                 <a
@@ -54,7 +54,7 @@ const Hero = () => {
                                     aria-label="GitHub"
                                     className="w-10 h-10 flex items-center justify-center rounded-full bg-[#333] hover:scale-110 transition-transform duration-300 shadow-lg"
                                 >
-                                    <Github className="w-6 h-6 text-white" />
+                                    <FaGithub className="w-6 h-6 text-white" />
                                 </a>
 
                                 <a
@@ -64,7 +64,7 @@ const Hero = () => {
                                     aria-label="Instagram"
                                     className="w-10 h-10 flex items-center justify-center rounded-full bg-gradient-to-br from-pink-500 via-red-500 to-yellow-500 hover:scale-110 transition-transform duration-300 shadow-lg"
                                 >
-                                    <Instagram className="w-6 h-6 text-white" />
+                                    <FaInstagram className="w-6 h-6 text-white" />
                                 </a>
                             </div>
                         </motion.div>
