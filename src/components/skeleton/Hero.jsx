@@ -2,10 +2,10 @@ const SkeletonHero = () => {
     return (
         <div class="w-full bg-gradient-to-r from-purple-900 via-indigo-900 to-blue-900 text-white backdrop-blur-md" id="home">
             <div class="w-full bg-black/50">
-                <div className="container mx-auto">
+                <div className="container mx-auto lg:px-10">
                     <div class="flex flex-col-reverse md:flex-row items-center justify-center text-center lg:text-start gap-12 py-5">
                         <div class="space-y-4 animate-pulse grow">
-                            <h2 class="h-6 bg-white rounded w-2/3"></h2>
+                            <h2 class="h-6 bg-white rounded w-1/2"></h2>
                             <div class="h-10 bg-white rounded w-2/3"></div>
                             <p class="h-4 bg-white rounded w-2/3"></p>
                             <p class="h-4 bg-white rounded w-2/3"></p>
