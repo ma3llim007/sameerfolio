@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import Container from "./Container";
 import { TypeAnimation } from "react-type-animation";
-import profile from "../assets/profile.jpg";
+import profile from "../assets/profile.webp";
 import { FaCloudDownloadAlt, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 const Hero = () => {
