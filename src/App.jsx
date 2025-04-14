@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import SkeletonHero from "./components/skeleton/Hero";
 import ViewPortViewer from "./components/ViewPortViewer";
 import SkeletonSkills from "./components/skeleton/Skills";
+import Project from "./components/Project";
 const Hero = lazy(() => import("./components/Hero"));
 const Skills = lazy(() => import("./components/Skills"));
 
@@ -18,7 +19,7 @@ const App = () => {
             <Suspense fallback={<SkeletonSkills />}>
                 <Skills />
             </Suspense>
-
+            <Project />
             <ViewPortViewer />
         </div>
     );

@@ -16,7 +16,9 @@ const Header = () => {
                         <li className="hover:text-primary transition">
                             <a href="#skills">Skills</a>
                         </li>
-                        <li className="hover:text-primary transition">Project's</li>
+                        <li className="hover:text-primary transition">
+                            <a href="#projects">Project's</a>
+                        </li>
                         <li className="hover:text-primary transition">Experience</li>
                         <li className="hover:text-primary transition">Contact</li>
                     </ul>
