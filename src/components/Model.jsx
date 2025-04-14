@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import { createPortal } from "react-dom";
 import { motion } from "framer-motion";
 
-const Model = ({ isOpen, onClose, title, children }) => {
+const Model = ({ isOpen, onClose, title, children, footer }) => {
     useEffect(() => {
         const handleKeyDown = (e) => {
             if (e.key === "Escape") {
@@ -40,6 +40,7 @@ const Model = ({ isOpen, onClose, title, children }) => {
                         </button>
                         {title && <h2 className="text-2xl font-bold mb-4 border-b border-white/10 pb-2">{title}</h2>}
                         <div className="max-h-[60vh] overflow-y-scroll">{children}</div>
+                        {footer && <div className="mt-4 pt-4 border-t border-white/10 flex justify-between">{footer}</div>}
                     </motion.div>
                 </motion.div>
             )}
