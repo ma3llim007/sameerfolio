@@ -1,9 +1,10 @@
 import { lazy, Suspense } from "react";
 import Header from "./components/Header";
 import SkeletonHero from "./components/skeleton/Hero";
-import Skills from "./components/Skills";
 import ViewPortViewer from "./components/ViewPortViewer";
+import SkeletonSkills from "./components/skeleton/Skills";
 const Hero = lazy(() => import("./components/Hero"));
+const Skills = lazy(() => import("./components/Skills"));
 
 const App = () => {
     return (
@@ -14,7 +15,10 @@ const App = () => {
                     <Hero />
                 </Suspense>
             </section>
-            <Skills />
+            <Suspense fallback={<SkeletonSkills />}>
+                <Skills />
+            </Suspense>
+
             <ViewPortViewer />
         </div>
     );
