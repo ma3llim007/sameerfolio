@@ -2,7 +2,9 @@
 
 @theme inline {
     --font-playfair: "Playfair Display", serif;
-    --font-roboto: "Roboto", sans-serif
+    --font-roboto: "Roboto", sans-serif;
+    --font-eagle-lake: "Eagle Lake", sans-serif;
+
 }
 
 @keyframes wave {

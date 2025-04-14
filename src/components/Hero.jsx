@@ -23,7 +23,7 @@ const Hero = () => {
                                 wrapper="h1"
                                 speed={50}
                                 repeat={Infinity}
-                                className="text-4xl md:text-6xl font-bold font-playfair"
+                                className="text-4xl md:text-6xl font-bold font-eagle-lake"
                             />
                             <p className="text-base md:text-lg text-gray-300 leading-relaxed max-w-2xl">
                                 A passionate developer building scalable, high-performance, and user-friendly web applications using the MERN stack. I focus on clean code and modern UI to deliver
