@@ -52,18 +52,18 @@ const Project = () => {
         <>
             <section className="w-full py-5" id="projects">
                 <Container>
-                    <h2 className="text-3xl lg:text-4xl font-extrabold mb-6 underline underline-offset-4 font-playfair">Projects</h2>
+                    <h2 className="text-3xl lg:text-4xl font-extrabold mb-6 underline underline-offset-4 font-playfair select-none">Projects</h2>
                     <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
                         {/* Major Projects */}
                         <div className="lg:col-span-2 space-y-6">
-                            <h3 className="text-2xl font-semibold text-white border-b border-white/20 pb-2 font-playfair">Major Projects</h3>
+                            <h3 className="text-2xl font-semibold text-white border-b border-white/20 pb-2 font-playfair text-center lg:text-start underline select-none">Major Projects</h3>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                                 {/* sameerCart Project Card */}
                                 <div className="rounded-xl overflow-hidden bg-white/10 backdrop-blur-lg ring-1 ring-white/10 shadow-xl transition-all hover:shadow-2xl hover:scale-[1.02] duration-300 hover:border-indigo-500 hover:shadow-indigo-500/30">
                                     <img src={sameerCartImage} alt="SameerCart Project Screenshot" className="w-full h-52 object-cover" />
                                     <div className="p-5 space-y-4">
-                                        <h4 className="text-2xl font-bold">SameerCart</h4>
-                                        <p className="text-sm md:text-base">
+                                        <h4 className="text-2xl font-bold text-center">SameerCart</h4>
+                                        <p className="text-sm md:text-base text-center">
                                             SameerCart is a full-stack eCommerce app with secure authentication, Razorpay checkout, real-time tracking, and a responsive admin dashboard.
                                         </p>
                                         <div className="flex justify-center flex-wrap gap-2">
@@ -97,8 +97,8 @@ const Project = () => {
                                 <div className="rounded-xl overflow-hidden bg-white/10 backdrop-blur-lg ring-1 ring-white/10 shadow-xl transition-all hover:shadow-2xl hover:scale-[1.02] duration-300 hover:border-indigo-500 hover:shadow-indigo-500/30">
                                     <img src={blogSphereImage} alt="BlogSphere Project Screenshot" className="w-full h-52 object-cover" />
                                     <div className="p-5 space-y-4">
-                                        <h4 className="text-2xl font-bold">BlogSphere</h4>
-                                        <p className="text-sm md:text-base">
+                                        <h4 className="text-2xl font-bold text-center">BlogSphere</h4>
+                                        <p className="text-sm md:text-base text-center">
                                             BlogSphere is a full-stack platform enabling admins, moderators, and writers to collaborate with role-based permissions, dynamic workflows, and a responsive
                                             UI.
                                         </p>
@@ -133,8 +133,8 @@ const Project = () => {
                                 <div className="rounded-xl overflow-hidden bg-white/10 backdrop-blur-lg ring-1 ring-white/10 shadow-xl transition-all hover:shadow-2xl hover:scale-[1.02] duration-300 hover:border-indigo-500 hover:shadow-indigo-500/30">
                                     <img src={msCutImage} alt="MsCut Project Screenshot" className="w-full h-52 object-cover" />
                                     <div className="p-5 space-y-4">
-                                        <h4 className="text-2xl font-bold">MsCut</h4>
-                                        <p className="text-sm md:text-base">
+                                        <h4 className="text-2xl font-bold text-center">MsCut</h4>
+                                        <p className="text-sm md:text-base text-center">
                                             MsCut is a full-stack URL shortener with QR generation, click analytics, authentication, and a responsive UI for seamless link management.
                                         </p>
                                         <div className="flex justify-center flex-wrap gap-2">
@@ -168,8 +168,8 @@ const Project = () => {
                                 <div className="rounded-xl overflow-hidden bg-white/10 backdrop-blur-lg ring-1 ring-white/10 shadow-xl transition-all hover:shadow-2xl hover:scale-[1.02] duration-300 hover:border-indigo-500 hover:shadow-indigo-500/30">
                                     <img src={aiCodeReviewImage} alt="Ai Code Review Project Screenshot" className="w-full h-52 object-cover" />
                                     <div className="p-5 space-y-4">
-                                        <h4 className="text-2xl font-bold">Ai Code Review</h4>
-                                        <p className="text-sm md:text-base">
+                                        <h4 className="text-2xl font-bold text-center">Ai Code Review</h4>
+                                        <p className="text-sm md:text-base text-center">
                                             AI Code Review helps developers improve code quality through AI-driven analysis, syntax checks, performance tips, and best practices.
                                         </p>
                                         <div className="flex justify-center flex-wrap gap-2">
@@ -203,7 +203,7 @@ const Project = () => {
                         </div>
                         {/* Minor Projects */}
                         <div className="space-y-6">
-                            <h3 className="text-2xl font-semibold text-white border-b border-white/20 pb-2 font-playfair">Minor Projects</h3>
+                            <h3 className="text-2xl font-semibold text-white border-b border-white/20 pb-2 font-playfair text-center lg:text-start underline select-none">Minor Projects</h3>
                             <div className="flex flex-col gap-5">
                                 {minorProject?.map((project) => (
                                     <a
@@ -213,7 +213,7 @@ const Project = () => {
                                         aria-label={`${project.title} project - opens in a new tab`}
                                         role="button"
                                         key={project.title}
-                                        className="flex items-start sm:items-center gap-4 border border-white/20 p-4 bg-white/10 backdrop-blur-xl rounded-2xl shadow-xl hover:border-indigo-500 hover:shadow-indigo-500/10 hover:scale-[1.02] transition-all duration-300 cursor-pointer select-none"
+                                        className="flex items-start sm:items-center gap-4 border border-white/20 p-4 bg-white/10 backdrop-blur-xl rounded-2xl shadow-xl hover:border-indigo-500 hover:shadow-indigo-500/20 hover:scale-[1.02] transition-all duration-300 cursor-pointer select-none"
                                     >
                                         <project.Icon size={40} className="shrink-0" />
                                         <div className="space-y-1">
