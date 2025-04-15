@@ -3,30 +3,68 @@ import sameerCartImage from "../assets/projects/sameerCart.webp";
 import blogSphereImage from "../assets/projects/blogsphere.webp";
 import msCutImage from "../assets/projects/msCut.webp";
 import aiCodeReviewImage from "../assets/projects/aiCodeReview.webp";
-import { FaCode, FaEye, FaLink } from "react-icons/fa";
+import { FaBlogger, FaClock, FaCode, FaEye, FaLink, FaMoneyBillWave, FaProductHunt, FaRobot, FaTasks } from "react-icons/fa";
 import Model from "./Model";
 import { useState } from "react";
 import { MdClose } from "react-icons/md";
 
+const minorProject = [
+    {
+        title: "Blog Platform",
+        Icon: FaBlogger,
+        desc: "A feature-rich blogging system with rich-text editing capabilities, built using React, Redux Toolkit, Redux Persist, and TinyMCE.",
+        link: "https://github.com/ma3llim007/react_project/tree/master/06_blog_platform",
+    },
+    {
+        title: "E-Commerce Product Page",
+        Icon: FaProductHunt,
+        desc: "A responsive and modern product showcase page designed with React, Tailwind CSS, and ShadCN UI components.",
+        link: "https://github.com/ma3llim007/react_project/tree/master/07_ecommerce_product_page",
+    },
+    {
+        title: "Expense Tracker",
+        Icon: FaMoneyBillWave,
+        desc: "A personal finance tracker built with React and Redux, leveraging Redux Persist for seamless state management and local storage support.",
+        link: "https://github.com/ma3llim007/react_project/tree/master/05_expense_tracker",
+    },
+    {
+        title: "Task Management",
+        Icon: FaTasks,
+        desc: "A drag-and-drop task manager application developed with React, Redux Persist, and React DnD for intuitive task organization.",
+        link: "https://github.com/ma3llim007/react_project/tree/master/09_task_management_app",
+    },
+    {
+        title: "Pomodoro Timer",
+        Icon: FaClock,
+        desc: "A productivity-focused timer app using React, Styled Components, Framer Motion for animations, and Formik for form handling.",
+        link: "https://github.com/ma3llim007/react_project/tree/master/09_task_management_app",
+    },
+    {
+        title: "AI Resume Builder",
+        Icon: FaRobot,
+        desc: " An intelligent backend API built with Node.js and Express.js that generates resumes using Gemini AI and environment configuration via dotenv.",
+        link: "https://github.com/ma3llim007/react_project/tree/master/09_task_management_app",
+    },
+];
 const Project = () => {
     const [isOpen, setIsOpen] = useState(null);
     return (
         <>
-            <section className="w-full" id="projects">
+            <section className="w-full py-5" id="projects">
                 <Container>
                     <h2 className="text-3xl lg:text-4xl font-extrabold mb-6 underline underline-offset-4 font-playfair">Projects</h2>
-                    <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
+                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
                         {/* Major Projects */}
-                        <div className="lg:col-span-3 space-y-6">
+                        <div className="lg:col-span-2 space-y-6">
                             <h3 className="text-2xl font-semibold text-white border-b border-white/20 pb-2 font-playfair">Major Projects</h3>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                                 {/* sameerCart Project Card */}
-                                <div className="rounded-xl overflow-hidden bg-white/10 backdrop-blur-lg ring-1 ring-white/10 shadow-xl transition-all hover:shadow-2xl hover:scale-[1.02] duration-300">
+                                <div className="rounded-xl overflow-hidden bg-white/10 backdrop-blur-lg ring-1 ring-white/10 shadow-xl transition-all hover:shadow-2xl hover:scale-[1.02] duration-300 hover:border-indigo-500 hover:shadow-indigo-500/30">
                                     <img src={sameerCartImage} alt="SameerCart Project Screenshot" className="w-full h-52 object-cover" />
                                     <div className="p-5 space-y-4">
                                         <h4 className="text-2xl font-bold">SameerCart</h4>
                                         <p className="text-sm md:text-base">
-                                            SameerCart is a full-stack eCommerce app with secure auth, Razorpay checkout, real-time tracking, and a responsive admin dashboard.
+                                            SameerCart is a full-stack eCommerce app with secure authentication, Razorpay checkout, real-time tracking, and a responsive admin dashboard.
                                         </p>
                                         <div className="flex justify-center flex-wrap gap-2">
                                             <a
@@ -56,12 +94,12 @@ const Project = () => {
                                     </div>
                                 </div>
                                 {/* blogSphere Project Card */}
-                                <div className="rounded-xl overflow-hidden bg-white/10 backdrop-blur-lg ring-1 ring-white/10 shadow-xl transition-all hover:shadow-2xl hover:scale-[1.02] duration-300">
+                                <div className="rounded-xl overflow-hidden bg-white/10 backdrop-blur-lg ring-1 ring-white/10 shadow-xl transition-all hover:shadow-2xl hover:scale-[1.02] duration-300 hover:border-indigo-500 hover:shadow-indigo-500/30">
                                     <img src={blogSphereImage} alt="BlogSphere Project Screenshot" className="w-full h-52 object-cover" />
                                     <div className="p-5 space-y-4">
                                         <h4 className="text-2xl font-bold">BlogSphere</h4>
                                         <p className="text-sm md:text-base">
-                                            BlogSphere is a full-stack platform enabling admins, moderators, and writers to collaborate with role-based permissions, dynamic workflows, and responsive
+                                            BlogSphere is a full-stack platform enabling admins, moderators, and writers to collaborate with role-based permissions, dynamic workflows, and a responsive
                                             UI.
                                         </p>
                                         <div className="flex justify-center flex-wrap gap-2">
@@ -92,12 +130,12 @@ const Project = () => {
                                     </div>
                                 </div>
                                 {/* msCut Project Card */}
-                                <div className="rounded-xl overflow-hidden bg-white/10 backdrop-blur-lg ring-1 ring-white/10 shadow-xl transition-all hover:shadow-2xl hover:scale-[1.02] duration-300">
+                                <div className="rounded-xl overflow-hidden bg-white/10 backdrop-blur-lg ring-1 ring-white/10 shadow-xl transition-all hover:shadow-2xl hover:scale-[1.02] duration-300 hover:border-indigo-500 hover:shadow-indigo-500/30">
                                     <img src={msCutImage} alt="MsCut Project Screenshot" className="w-full h-52 object-cover" />
                                     <div className="p-5 space-y-4">
                                         <h4 className="text-2xl font-bold">MsCut</h4>
                                         <p className="text-sm md:text-base">
-                                            MSCUT is a full-stack URL shortener with QR generation, click analytics, authentication, and responsive UI for seamless link management.
+                                            MsCut is a full-stack URL shortener with QR generation, click analytics, authentication, and a responsive UI for seamless link management.
                                         </p>
                                         <div className="flex justify-center flex-wrap gap-2">
                                             <a
@@ -127,12 +165,12 @@ const Project = () => {
                                     </div>
                                 </div>
                                 {/* Ai Code Review Project Card */}
-                                <div className="rounded-xl overflow-hidden bg-white/10 backdrop-blur-lg ring-1 ring-white/10 shadow-xl transition-all hover:shadow-2xl hover:scale-[1.02] duration-300">
+                                <div className="rounded-xl overflow-hidden bg-white/10 backdrop-blur-lg ring-1 ring-white/10 shadow-xl transition-all hover:shadow-2xl hover:scale-[1.02] duration-300 hover:border-indigo-500 hover:shadow-indigo-500/30">
                                     <img src={aiCodeReviewImage} alt="Ai Code Review Project Screenshot" className="w-full h-52 object-cover" />
                                     <div className="p-5 space-y-4">
                                         <h4 className="text-2xl font-bold">Ai Code Review</h4>
                                         <p className="text-sm md:text-base">
-                                            AI Code Review helps developers improve code quality with AI-driven analysis, syntax checks, performance tips, and best practices.
+                                            AI Code Review helps developers improve code quality through AI-driven analysis, syntax checks, performance tips, and best practices.
                                         </p>
                                         <div className="flex justify-center flex-wrap gap-2">
                                             <a
@@ -163,13 +201,30 @@ const Project = () => {
                                 </div>
                             </div>
                         </div>
+                        {/* Minor Projects */}
                         <div className="space-y-6">
                             <h3 className="text-2xl font-semibold text-white border-b border-white/20 pb-2 font-playfair">Minor Projects</h3>
-                            <div className="text-sm text-gray-400 italic">More coming soon...</div>
+                            <div className="flex flex-col gap-5">
+                                {minorProject?.map((project) => (
+                                    <a
+                                        href={project.link}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        aria-label={`${project.title} project - opens in a new tab`}
+                                        role="button"
+                                        key={project.title}
+                                        className="flex items-start sm:items-center gap-4 border border-white/20 p-4 bg-white/10 backdrop-blur-xl rounded-2xl shadow-xl hover:border-indigo-500 hover:shadow-indigo-500/10 hover:scale-[1.02] transition-all duration-300 cursor-pointer select-none"
+                                    >
+                                        <project.Icon size={40} className="shrink-0" />
+                                        <div className="space-y-1">
+                                            <h4 className="text-xl font-semibold">{project.title}</h4>
+                                            <p className="text-sm">{project.desc}</p>
+                                        </div>
+                                    </a>
+                                ))}
+                            </div>
                         </div>
                     </div>
-                    <br />
-                    <br />
                 </Container>
             </section>
 
