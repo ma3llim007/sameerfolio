@@ -4,6 +4,7 @@ import SkeletonHero from "./components/skeleton/Hero";
 import ViewPortViewer from "./components/ViewPortViewer";
 import SkeletonSkills from "./components/skeleton/Skills";
 import Project from "./components/Project";
+import Education from "./components/Education";
 const Hero = lazy(() => import("./components/Hero"));
 const Skills = lazy(() => import("./components/Skills"));
 
@@ -20,6 +21,7 @@ const App = () => {
                 <Skills />
             </Suspense>
             <Project />
+            <Education />
             <ViewPortViewer />
         </div>
     );
