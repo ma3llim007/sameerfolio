@@ -10,7 +10,7 @@ const Skills = lazy(() => import("./components/Skills"));
 
 const App = () => {
     return (
-        <div className="w-full min-h-screen bg-slate-950 text-white font-roboto">
+        <div className="w-full min-h-screen bg-slate-950 text-white font-roboto scroll-smooth">
             <Header />
             <section className="pt-[57px]">
                 <Suspense fallback={<SkeletonHero />}>

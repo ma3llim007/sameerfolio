@@ -9,7 +9,7 @@ const Hero = () => {
         <div className="w-full bg-gradient-to-r from-purple-900 via-indigo-900 to-blue-900 text-white backdrop-blur-md" id="home">
             <div className="w-full bg-black/50">
                 <Container>
-                    <div className="flex flex-col-reverse md:flex-row items-center justify-center text-center lg:text-start gap-12 py-5">
+                    <div className="flex flex-col-reverse md:flex-row items-center justify-center text-center lg:text-start gap-8 lg:gap-16 py-12 md:py-16">
                         <motion.div initial={{ opacity: 0, x: -50 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8 }} className="space-y-4 grow">
                             <h2 className="text-2xl md:text-4xl font-semibold font-playfair flex items-center justify-center lg:justify-start gap-3">
                                 <span>Hi there</span>
@@ -33,6 +33,7 @@ const Hero = () => {
                                 <a
                                     href="/Mohd-Sameer-Resume.pdf"
                                     download
+                                    aria-label="Download Resume"
                                     className="inline-flex items-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg font-medium transition duration-200 shadow-md"
                                 >
                                     Resume <FaCloudDownloadAlt className="w-5 h-5" />
