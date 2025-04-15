@@ -50,7 +50,7 @@ const Project = () => {
     const [isOpen, setIsOpen] = useState(null);
     return (
         <>
-            <section className="w-full py-5" id="projects">
+            <section className="w-full py-0" id="projects">
                 <Container>
                     <h2 className="text-3xl lg:text-4xl font-extrabold mb-6 underline underline-offset-4 font-playfair select-none">Projects</h2>
                     <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">

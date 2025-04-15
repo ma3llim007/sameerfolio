@@ -49,9 +49,9 @@ const TimelineItem = ({ title, subtitle, date, description }) => (
 
 const Education = () => {
     return (
-        <section className="w-full py-10" id="experience">
+        <section className="w-full py-14 lg:py-20" id="experience">
             <Container>
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                     <div>
                         <h2 className="text-3xl lg:text-4xl font-extrabold mb-6 underline underline-offset-8 decoration-blue-600 font-playfair text-gray-900 dark:text-white select-none">Education</h2>
                         <div>
