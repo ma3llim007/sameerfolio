@@ -1,13 +1,27 @@
+import { motion } from "framer-motion";
 import Container from "./Container";
-
 const frontEndSkills = ["HTML", "CSS", "Bootstrap", "TailwindCss", "JavaScript", "ReactJs", "React Router", "State Management", "Response Design"];
 const backendSkills = ["Node.js", "Express.js", "MongoDB", "Mongoose", "RESTful APIs", "API Versioning", "Authentication (JWT)", "SQL", "Middleware"];
 const toolsSkills = ["Git & GitHub", "VS Code", "Postman", "NPM / Yarn", "ESLint", "Prettier", "Chrome DevTools", "Figma", "Docker"];
+
+const fadeUp = {
+    hidden: { opacity: 0, y: 40 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+};
+
 const Skills = () => {
     return (
-        <section className="w-full py-7" id="skills">
+        <section className="w-full py-12" id="skills">
             <Container>
-                <h2 className="text-3xl lg:text-4xl font-extrabold mb-6 underline underline-offset-4 font-playfair">Tech Stack</h2>
+                <motion.h2
+                    className="text-3xl lg:text-4xl font-extrabold mb-10 underline underline-offset-4 font-playfair text-center md:text-start"
+                    initial={{ opacity: 0, y: -20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5 }}
+                    viewport={{ once: true }}
+                >
+                    Tech Stack
+                </motion.h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                     <div className="w-full space-y-4 p-5 rounded-xl bg-white/10 backdrop-blur-md ring-1 ring-white/10 shadow-lg">
                         <h4 className="text-2xl font-bold text-white border-b border-white/20 pb-1 font-playfair">Front-End</h4>
