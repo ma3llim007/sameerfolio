@@ -49,7 +49,7 @@ const TimelineItem = ({ title, subtitle, date, description }) => (
 
 const Education = () => {
     return (
-        <section className="w-full py-10" id="education">
+        <section className="w-full py-10" id="experience">
             <Container>
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
                     <div>

@@ -12,7 +12,7 @@ const App = () => {
     return (
         <div className="w-full min-h-screen bg-slate-950 text-white font-roboto">
             <Header />
-            <section className="pt-[59px]">
+            <section className="pt-[57px]">
                 <Suspense fallback={<SkeletonHero />}>
                     <Hero />
                 </Suspense>
