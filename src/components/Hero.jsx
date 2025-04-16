@@ -11,7 +11,7 @@ const Hero = () => {
                 <Container>
                     <div className="flex flex-col-reverse md:flex-row items-center justify-center text-center lg:text-start gap-8 lg:gap-16 py-12 md:py-16">
                         <motion.div initial={{ opacity: 0, x: -50 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8 }} className="space-y-4 grow">
-                            <h2 className="text-2xl md:text-4xl font-semibold font-playfair flex items-center justify-center lg:justify-start gap-3">
+                            <h2 className="text-2xl md:text-3xl font-semibold font-playfair flex items-center justify-center lg:justify-start gap-3">
                                 <span>Hi there</span>
                                 <span role="img" aria-label="wave" className="waving-hand text-4xl">
                                     👋
@@ -23,7 +23,7 @@ const Hero = () => {
                                 wrapper="h1"
                                 speed={50}
                                 repeat={Infinity}
-                                className="text-4xl md:text-6xl font-bold font-eagle-lake"
+                                className="text-4xl md:text-5xl font-bold font-eagle-lake"
                             />
                             <p className="text-base md:text-lg text-gray-300 leading-relaxed max-w-2xl">
                                 A passionate developer building scalable, high-performance, and user-friendly web applications using the MERN stack. I focus on clean code and modern UI to deliver
