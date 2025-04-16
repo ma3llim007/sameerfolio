@@ -6,6 +6,7 @@ import SkeletonSkills from "./components/skeleton/Skills";
 import Project from "./components/Project";
 import Education from "./components/Education";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 const Hero = lazy(() => import("./components/Hero"));
 const Skills = lazy(() => import("./components/Skills"));
 
@@ -24,6 +25,7 @@ const App = () => {
             <Project />
             <Education />
             <Contact />
+            <Footer />
             <ViewPortViewer />
         </div>
     );
