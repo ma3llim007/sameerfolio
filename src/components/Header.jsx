@@ -3,7 +3,7 @@ import { Link } from "react-scroll";
 
 const Header = () => {
     return (
-        <div className="fixed top-0 left-0 right-0 z-50 bg-indigo-900 backdrop-blur-md border-b border-white/10 transition-all duration-300 shadow-xl">
+        <div className="fixed top-0 left-0 right-0 z-50 bg-indigo-900/80 backdrop-blur-md border-b border-white/10 transition-all duration-300 shadow-xl">
             <div className="grid grid-cols-2 items-center px-6 md:px-12 h-14 max-w-full mx-auto">
                 {/* Logo Section */}
                 <div className="w-[160px] h-[40px] flex items-center">
