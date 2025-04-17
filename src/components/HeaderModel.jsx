@@ -70,7 +70,7 @@ const HeaderModel = ({ isOpen, onClose }) => {
             {isOpen && (
                 <motion.div className="fixed inset-0 z-50 flex items-start justify-center overflow-hidden" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} onClick={onClose}>
                     <motion.div
-                        className="bg-slate-900 text-white mt-14 px-4 pt-4 rounded-xl max-w-sm sm:max-w-2xl md:max-w-3xl lg:max-w-4xl xl:max-w-lg w-full shadow-2xl relative space-y-3"
+                        className="bg-slate-900 text-white mt-14 px-4 pt-4 rounded-xl max-w-sm sm:max-w-xl w-full shadow-2xl relative space-y-3"
                         initial={{ scale: 0.9, opacity: 0 }}
                         animate={{ scale: 1, opacity: 1 }}
                         exit={{ scale: 0.9, opacity: 0 }}
@@ -105,7 +105,7 @@ const HeaderModel = ({ isOpen, onClose }) => {
                                 ))}
                             </div>
                             <p className="text-xs font-semibold text-gray-400 uppercase tracking-wide">General</p>
-                            <div className="flex flex-col">
+                            <a href="/Mohd-Sameer-Resume.pdf" download aria-label="Download Resume" className="flex items-start gap-3 p-3 rounded-lg transition-colors">
                                 <div className="w-11 h-11 flex items-center justify-center bg-gray-600/40 rounded-lg text-white">
                                     <CiFileOn className="w-6 h-6" />
                                 </div>
@@ -113,7 +113,7 @@ const HeaderModel = ({ isOpen, onClose }) => {
                                     <p className="text-base font-medium">Resume</p>
                                     <p className="text-sm text-gray-300">View My Resume</p>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                         <div className="border-t border-white/50 flex items-center justify-between py-2">
                             <div className="flex flex-wrap justify-center gap-3">
