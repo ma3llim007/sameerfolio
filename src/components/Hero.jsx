@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
 import Container from "./Container";
 import { TypeAnimation } from "react-type-animation";
-import profile from "../assets/profile.webp";
+import avatar256 from "../assets/avatar256.webp";
+import avatar160 from "../assets/avatar160.webp";
 import { FaCloudDownloadAlt, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 const Hero = () => {
@@ -75,7 +76,14 @@ const Hero = () => {
                             transition={{ duration: 0.8 }}
                             className="w-full max-w-xs mx-auto md:mx-0 flex justify-center md:justify-end"
                         >
-                            <img src={profile} alt="Portrait of Mohd Sameer" className="w-40 h-40 md:w-64 md:h-64 object-cover rounded-full border-4 border-white shadow-xl" />
+                            <img
+                                loading="lazy"
+                                src={avatar256}
+                                srcSet={`${avatar160} 160w, ${avatar256} 256w`}
+                                sizes="(max-width:768px) 160px, 256px"
+                                alt="Portrait of Mohd Sameer"
+                                className="w-40 h-40 md:w-64 md:h-64 object-cover rounded-full border-4 border-white shadow-xl"
+                            />
                         </motion.div>
                     </div>
                 </Container>
