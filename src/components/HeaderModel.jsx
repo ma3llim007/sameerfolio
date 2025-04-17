@@ -1,0 +1,152 @@
+import { AnimatePresence, motion } from "framer-motion";
+import { useEffect } from "react";
+import { createPortal } from "react-dom";
+import { AiOutlineEnter } from "react-icons/ai";
+import { CiFileOn } from "react-icons/ci";
+import { FaBriefcase, FaEnvelope, FaGithub, FaGlobe, FaHome, FaInstagram, FaLinkedin, FaSearch, FaTools } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { LuArrowDownUp } from "react-icons/lu";
+import { Link } from "react-scroll";
+
+const HeaderModel = ({ isOpen, onClose }) => {
+    // Navigate items
+    const navigationItems = [
+        {
+            Icon: FaHome,
+            title: "Home",
+            subtitle: "Start here — explore my personal portfolio!",
+            path: "home",
+        },
+        {
+            Icon: FaTools,
+            title: "Skills",
+            subtitle: "Technologies and tools I'm proficient with",
+            path: "skills",
+        },
+        {
+            Icon: FaGlobe,
+            title: "Projects",
+            subtitle: "A showcase of my best work and creations",
+            path: "projects",
+        },
+        {
+            Icon: FaBriefcase,
+            title: "Experience",
+            subtitle: "My professional journey and work history",
+            path: "experience",
+        },
+        {
+            Icon: FaEnvelope,
+            title: "Contact Us",
+            subtitle: "Get in touch — I'd love to hear from you!",
+            path: "contact",
+        },
+    ];
+
+    useEffect(() => {
+        const handleKeyDown = (e) => {
+            // Closing Model on Escape
+            if (e.key === "Escape") {
+                onClose();
+            }
+        };
+        if (isOpen) {
+            document.addEventListener("keydown", handleKeyDown);
+        }
+
+        return () => document.removeEventListener("keydown", handleKeyDown);
+    }, [isOpen, onClose]);
+
+    useEffect(() => {
+        if (isOpen) {
+            document.body.classList.add("overflow-hidden");
+        } else {
+            document.body.classList.remove("overflow-hidden");
+        }
+    }, [isOpen]);
+
+    return createPortal(
+        <AnimatePresence>
+            {isOpen && (
+                <motion.div className="fixed inset-0 z-50 flex items-start justify-center overflow-hidden" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} onClick={onClose}>
+                    <motion.div
+                        className="bg-slate-900 text-white mt-14 px-4 pt-4 rounded-xl max-w-sm sm:max-w-2xl md:max-w-3xl lg:max-w-4xl xl:max-w-lg w-full shadow-2xl relative space-y-3"
+                        initial={{ scale: 0.9, opacity: 0 }}
+                        animate={{ scale: 1, opacity: 1 }}
+                        exit={{ scale: 0.9, opacity: 0 }}
+                        transition={{ duration: 0.25 }}
+                        onClick={(e) => e.stopPropagation()}
+                    >
+                        <button onClick={onClose} className="absolute top-1 right-8 cursor-pointer text-white text-2xl font-bold z-20">
+                            &times;
+                        </button>
+                        <div className="max-h-[50vh] overflow-y-scroll space-y-2">
+                            <p className="text-xs font-semibold text-gray-400 uppercase tracking-wide">Navigation</p>
+                            <div className="flex flex-col">
+                                {navigationItems?.map((item, index) => (
+                                    <Link
+                                        onClick={onClose}
+                                        smooth={true}
+                                        duration={500}
+                                        to={item.path}
+                                        key={item.title + index}
+                                        tabIndex={-1}
+                                        role="button"
+                                        className="flex items-start gap-3 p-3 rounded-lg transition-colors"
+                                    >
+                                        <div className="w-11 h-11 flex items-center justify-center bg-gray-600/40 rounded-lg text-white">
+                                            <item.Icon className="w-6 h-6" />
+                                        </div>
+                                        <div className="flex flex-col">
+                                            <p className="text-base font-medium">{item.title}</p>
+                                            <p className="text-sm text-gray-300">{item.subtitle}</p>
+                                        </div>
+                                    </Link>
+                                ))}
+                            </div>
+                            <p className="text-xs font-semibold text-gray-400 uppercase tracking-wide">General</p>
+                            <div className="flex flex-col">
+                                <div className="w-11 h-11 flex items-center justify-center bg-gray-600/40 rounded-lg text-white">
+                                    <CiFileOn className="w-6 h-6" />
+                                </div>
+                                <div className="flex flex-col">
+                                    <p className="text-base font-medium">Resume</p>
+                                    <p className="text-sm text-gray-300">View My Resume</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="border-t border-white/50 flex items-center justify-between py-2">
+                            <div className="flex flex-wrap justify-center gap-3">
+                                <a href="https://www.linkedin.com/in/mohdsameer-dev/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="flex items-center justify-center">
+                                    <FaLinkedin className="w-5 h-5 text-white" />
+                                </a>
+                                <a href="https://github.com/ma3llim007/" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="flex items-center justify-center">
+                                    <FaGithub className="w-5 h-5 text-white" />
+                                </a>
+                                <a href="https://www.instagram.com/ma_3llim_007/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="flex items-center justify-center">
+                                    <FaInstagram className="w-5 h-5 text-white" />
+                                </a>
+                                <a href="https://x.com/Ma_3llim_007" target="_blank" rel="noopener noreferrer" aria-label="X (formerly Twitter)" className="flex items-center justify-center">
+                                    <FaXTwitter className="w-5 h-5 text-white" />
+                                </a>
+                            </div>
+                            <div className="flex flex-wrap justify-center gap-1 items-center">
+                                <p className="flex justify-center items-center gap-1 text-sm">
+                                    <LuArrowDownUp className="bg-gray-800 text-white p-0.5 rounded" size={18} />
+                                    To Navigate
+                                </p>
+                                |
+                                <p className="flex justify-center items-center gap-1 text-sm">
+                                    Press <AiOutlineEnter className="bg-gray-800 text-white p-0.5 rounded" size={18} /> To Open
+                                </p>
+                            </div>
+                        </div>
+                    </motion.div>
+                </motion.div>
+            )}
+        </AnimatePresence>,
+        document.getElementById("model-root")
+    );
+};
+
+export default HeaderModel;
