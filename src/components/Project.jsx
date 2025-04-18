@@ -77,7 +77,7 @@ const Project = () => {
                                             </a>
                                             <a
                                                 href="https://github.com/ma3llim007/sameercart"
-                                                className="inline-flex items-center gap-2 px-4 py-2 text-sm font-semibold text-white bg-green-600 hover:bg-green-700 rounded-md transition"
+                                                className="inline-flex items-center gap-2 px-4 py-2 text-sm font-semibold text-white bg-green-700 hover:bg-green-800 rounded-md transition"
                                                 aria-label="Source Code On Github"
                                                 target="_blank"
                                             >
@@ -85,7 +85,7 @@ const Project = () => {
                                             </a>
                                             <button
                                                 onClick={() => setIsOpen("sameerCart")}
-                                                className="inline-flex items-center gap-2 px-4 py-2 text-sm font-semibold text-white bg-gray-700 hover:bg-gray-800 rounded-md transition cursor-pointer"
+                                                className="inline-flex items-center gap-2 px-4 py-2 text-sm font-semibold text-white bg-purple-700 hover:bg-purple-800 rounded-md transition cursor-pointer"
                                                 aria-label="More Project Details"
                                             >
                                                 <FaEye /> View More
@@ -113,7 +113,7 @@ const Project = () => {
                                             </a>
                                             <a
                                                 href="https://github.com/ma3llim007/blogsphere"
-                                                className="inline-flex items-center gap-2 px-4 py-2 text-sm font-semibold text-white bg-green-600 hover:bg-green-700 rounded-md transition"
+                                                className="inline-flex items-center gap-2 px-4 py-2 text-sm font-semibold text-white bg-green-700 hover:bg-green-800 rounded-md transition"
                                                 aria-label="Source Code On Github"
                                                 target="_blank"
                                             >
@@ -121,7 +121,7 @@ const Project = () => {
                                             </a>
                                             <button
                                                 onClick={() => setIsOpen("blogSphere")}
-                                                className="inline-flex items-center gap-2 px-4 py-2 text-sm font-semibold text-white bg-gray-700 hover:bg-gray-800 rounded-md transition cursor-pointer"
+                                                className="inline-flex items-center gap-2 px-4 py-2 text-sm font-semibold text-white bg-purple-700 hover:bg-purple-800 rounded-md transition cursor-pointer"
                                                 aria-label="More Project Details"
                                             >
                                                 <FaEye /> View More
@@ -148,7 +148,7 @@ const Project = () => {
                                             </a>
                                             <a
                                                 href="https://github.com/ma3llim007/mscut"
-                                                className="inline-flex items-center gap-2 px-4 py-2 text-sm font-semibold text-white bg-green-600 hover:bg-green-700 rounded-md transition"
+                                                className="inline-flex items-center gap-2 px-4 py-2 text-sm font-semibold text-white bg-green-700 hover:bg-green-800 rounded-md transition"
                                                 aria-label="Source Code On Github"
                                                 target="_blank"
                                             >
@@ -156,7 +156,7 @@ const Project = () => {
                                             </a>
                                             <button
                                                 onClick={() => setIsOpen("msCut")}
-                                                className="inline-flex items-center gap-2 px-4 py-2 text-sm font-semibold text-white bg-gray-700 hover:bg-gray-800 rounded-md transition cursor-pointer"
+                                                className="inline-flex items-center gap-2 px-4 py-2 text-sm font-semibold text-white bg-purple-700 hover:bg-purple-800 rounded-md transition cursor-pointer"
                                                 aria-label="More Project Details"
                                             >
                                                 <FaEye /> View More
@@ -183,7 +183,7 @@ const Project = () => {
                                             </a>
                                             <a
                                                 href="https://github.com/ma3llim007/ai-code-review"
-                                                className="inline-flex items-center gap-2 px-4 py-2 text-sm font-semibold text-white bg-green-600 hover:bg-green-700 rounded-md transition"
+                                                className="inline-flex items-center gap-2 px-4 py-2 text-sm font-semibold text-white bg-green-700 hover:bg-green-800 rounded-md transition"
                                                 aria-label="Source Code On Github"
                                                 target="_blank"
                                             >
@@ -191,7 +191,7 @@ const Project = () => {
                                             </a>
                                             <button
                                                 onClick={() => setIsOpen("aiCode")}
-                                                className="inline-flex items-center gap-2 px-4 py-2 text-sm font-semibold text-white bg-gray-700 hover:bg-gray-800 rounded-md transition cursor-pointer"
+                                                className="inline-flex items-center gap-2 px-4 py-2 text-sm font-semibold text-white bg-purple-700 hover:bg-purple-800 rounded-md transition cursor-pointer"
                                                 aria-label="More Project Details"
                                             >
                                                 <FaEye /> View More
