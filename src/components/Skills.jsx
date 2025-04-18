@@ -35,7 +35,7 @@ const Skills = () => {
                             viewport={{ once: true }}
                             className="w-full space-y-4 p-5 rounded-xl bg-white/10 backdrop-blur-md ring-1 ring-white/10 shadow-lg"
                         >
-                            <h4 className="text-2xl font-bold text-white border-b border-white/20 pb-1 font-playfair">{category.title}</h4>
+                            <h3 className="text-2xl font-bold text-white border-b border-white/20 pb-1 font-playfair">{category.title}</h3>
                             <div className="flex flex-wrap gap-2">
                                 {category.skills.map((tech) => (
                                     <span
