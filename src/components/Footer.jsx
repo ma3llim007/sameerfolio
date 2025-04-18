@@ -4,10 +4,6 @@ import Container from "./Container";
 import { Link } from "react-scroll";
 
 const Footer = () => {
-    const handleEmailClick = () => {
-        window.open("mailto:mohdsameer68257@gmail.com", "_blank");
-    };
-
     return (
         <section className="w-full pt-4 bg-slate-950">
             <Container>

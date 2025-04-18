@@ -1,7 +1,6 @@
-import { AnimatePresence } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { useEffect } from "react";
 import { createPortal } from "react-dom";
-import { motion } from "framer-motion";
 
 const Model = ({ isOpen, onClose, title, children, footer }) => {
     useEffect(() => {

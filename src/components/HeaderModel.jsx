@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import { createPortal } from "react-dom";
 import { AiOutlineEnter } from "react-icons/ai";
 import { CiFileOn } from "react-icons/ci";
-import { FaBriefcase, FaEnvelope, FaGithub, FaGlobe, FaHome, FaInstagram, FaLinkedin, FaSearch, FaTools } from "react-icons/fa";
+import { FaBriefcase, FaEnvelope,FaGlobe, FaHome, FaTools } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { LuArrowDownUp } from "react-icons/lu";
 import { Link } from "react-scroll";
