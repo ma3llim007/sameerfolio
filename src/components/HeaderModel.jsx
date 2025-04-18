@@ -80,7 +80,7 @@ const HeaderModel = ({ isOpen, onClose }) => {
                         <button onClick={onClose} className="absolute top-1 right-8 cursor-pointer text-white text-2xl font-bold z-20">
                             &times;
                         </button>
-                        <div className="max-h-[50vh] overflow-y-scroll space-y-2">
+                        <div className="max-h-[55vh] overflow-y-scroll space-y-2">
                             <p className="text-xs font-semibold text-gray-400 uppercase tracking-wide">Navigation</p>
                             <div className="flex flex-col">
                                 {navigationItems?.map((item, index) => (
@@ -114,32 +114,6 @@ const HeaderModel = ({ isOpen, onClose }) => {
                                     <p className="text-sm text-gray-300">View My Resume</p>
                                 </div>
                             </a>
-                        </div>
-                        <div className="border-t border-white/50 flex items-center justify-between py-2">
-                            <div className="flex flex-wrap justify-center gap-3">
-                                <a href="https://www.linkedin.com/in/mohdsameer-dev/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="flex items-center justify-center">
-                                    <FaLinkedin className="w-5 h-5 text-white" />
-                                </a>
-                                <a href="https://github.com/ma3llim007/" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="flex items-center justify-center">
-                                    <FaGithub className="w-5 h-5 text-white" />
-                                </a>
-                                <a href="https://www.instagram.com/ma_3llim_007/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="flex items-center justify-center">
-                                    <FaInstagram className="w-5 h-5 text-white" />
-                                </a>
-                                <a href="https://x.com/Ma_3llim_007" target="_blank" rel="noopener noreferrer" aria-label="X (formerly Twitter)" className="flex items-center justify-center">
-                                    <FaXTwitter className="w-5 h-5 text-white" />
-                                </a>
-                            </div>
-                            <div className="flex flex-wrap justify-center gap-1 items-center">
-                                <p className="flex justify-center items-center gap-1 text-sm">
-                                    <LuArrowDownUp className="bg-gray-800 text-white p-0.5 rounded" size={18} />
-                                    To Navigate
-                                </p>
-                                |
-                                <p className="flex justify-center items-center gap-1 text-sm">
-                                    Press <AiOutlineEnter className="bg-gray-800 text-white p-0.5 rounded" size={18} /> To Open
-                                </p>
-                            </div>
                         </div>
                     </motion.div>
                 </motion.div>
