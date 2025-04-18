@@ -1,6 +1,5 @@
 import { lazy, Suspense } from "react";
 import Header from "./components/Header";
-import ViewPortViewer from "./components/ViewPortViewer";
 import Project from "./components/Project";
 import Education from "./components/Education";
 import Contact from "./components/Contact";
@@ -20,7 +19,6 @@ const App = () => {
             <Education />
             <Contact />
             <Footer />
-            <ViewPortViewer />
         </div>
     );
 };

@@ -1,6 +1,5 @@
-import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaArrowUp, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
-import { IoIosMail } from "react-icons/io";
 import Container from "./Container";
 import { Link } from "react-scroll";
 
@@ -56,6 +55,17 @@ const Footer = () => {
                         <p className="text-sm md:text-base px-4">&copy; {new Date().getFullYear()} Mohd Sameer. All Rights Reserved.</p>
                     </div>
                 </div>
+
+                <Link
+                    href="#home"
+                    to="home"
+                    smooth={true}
+                    duration={500}
+                    className="fixed bottom-5 right-5 w-10 h-10 bg-violet-600 rounded flex justify-center items-center text-white shadow-md transition duration-300 cursor-pointer"
+                    aria-label="Scroll to top"
+                >
+                    <FaArrowUp className="text-lg" />
+                </Link>
             </Container>
         </section>
     );
