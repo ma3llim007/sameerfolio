@@ -12,33 +12,33 @@ const Header = () => {
                 <Container>
                     <div className="grid grid-cols-2 items-center">
                         {/* Logo Section */}
-                        <Link to="home" smooth={true} duration={500} className="w-[160px] h-[40px] flex items-center cursor-pointer">
+                        <Link to="home" href="#home" smooth={true} duration={500} className="w-[160px] h-[40px] flex items-center cursor-pointer">
                             <img className="w-[250px] h-[150px] object-contain" src="logo.svg" alt="sameerfolio Logo" />
                         </Link>
                         <nav className="flex items-center justify-end gap-6">
                             <ul className="hidden md:flex items-center gap-6 text-lg">
                                 <li className="hover:text-primary transition">
-                                    <Link to="home" smooth={true} duration={500} className="select-none cursor-pointer">
+                                    <Link to="home" href="#home" smooth={true} duration={500} className="select-none cursor-pointer">
                                         Home
                                     </Link>
                                 </li>
                                 <li className="hover:text-primary transition">
-                                    <Link to="skills" smooth={true} duration={500} className="select-none cursor-pointer">
+                                    <Link to="skills" href="#skills" smooth={true} duration={500} className="select-none cursor-pointer">
                                         Skills
                                     </Link>
                                 </li>
                                 <li className="hover:text-primary transition">
-                                    <Link to="projects" smooth={true} duration={500} className="select-none cursor-pointer">
+                                    <Link to="projects" href="#projects" smooth={true} duration={500} className="select-none cursor-pointer">
                                         Projects
                                     </Link>
                                 </li>
                                 <li className="hover:text-primary transition">
-                                    <Link to="experience" smooth={true} duration={500} className="select-none cursor-pointer">
+                                    <Link to="experience" href="#experience" smooth={true} duration={500} className="select-none cursor-pointer">
                                         Experience
                                     </Link>
                                 </li>
                                 <li className="hover:text-primary transition">
-                                    <Link to="contact" smooth={true} duration={500} className="select-none cursor-pointer">
+                                    <Link to="contact" href="#contact" smooth={true} duration={500} className="select-none cursor-pointer">
                                         Contact
                                     </Link>
                                 </li>
