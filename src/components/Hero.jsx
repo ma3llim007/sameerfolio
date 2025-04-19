@@ -4,6 +4,7 @@ import { TypeAnimation } from "react-type-animation";
 import avatar256 from "../assets/avatar256.webp";
 import avatar160 from "../assets/avatar160.webp";
 import { FaCloudDownloadAlt, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
+import resume from "../assets/mohd_sameer_resume.pdf";
 
 const Hero = () => {
     return (
@@ -32,9 +33,9 @@ const Hero = () => {
                             </p>
                             <div className="flex flex-wrap space-x-4 items-center justify-center lg:justify-start">
                                 <a
-                                    href="/Mohd-Sameer-Resume.pdf"
-                                    download
-                                    aria-label="Download Resume"
+                                    href={resume}
+                                    target="_blank"
+                                    aria-label="View Resume"
                                     className="inline-flex items-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg font-medium transition duration-200 shadow-md"
                                 >
                                     Resume <FaCloudDownloadAlt className="w-5 h-5" />

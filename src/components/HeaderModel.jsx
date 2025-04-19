@@ -1,12 +1,10 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect } from "react";
 import { createPortal } from "react-dom";
-import { AiOutlineEnter } from "react-icons/ai";
 import { CiFileOn } from "react-icons/ci";
-import { FaBriefcase, FaEnvelope,FaGlobe, FaHome, FaTools } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
-import { LuArrowDownUp } from "react-icons/lu";
+import { FaBriefcase, FaEnvelope, FaGlobe, FaHome, FaTools } from "react-icons/fa";
 import { Link } from "react-scroll";
+import resume from "../assets/mohd_sameer_resume.pdf";
 
 const HeaderModel = ({ isOpen, onClose }) => {
     // Navigate items
@@ -105,7 +103,7 @@ const HeaderModel = ({ isOpen, onClose }) => {
                                 ))}
                             </div>
                             <p className="text-xs font-semibold text-gray-400 uppercase tracking-wide">General</p>
-                            <a href="/Mohd-Sameer-Resume.pdf" download aria-label="Download Resume" className="flex items-start gap-3 p-3 rounded-lg transition-colors">
+                            <a onClick={onClose} target="_blank" href={resume} aria-label="View Resume" className="flex items-start gap-3 p-3 rounded-lg transition-colors">
                                 <div className="w-11 h-11 flex items-center justify-center bg-gray-600/40 rounded-lg text-white">
                                     <CiFileOn className="w-6 h-6" />
                                 </div>
