@@ -1,10 +1,10 @@
-# 👨‍💻 Sameerfolio
+# Sameerfolio
 ![sameerfolio screenshot](images/mohd-sameer-portfolio.png)
 
-## 🌐 Overview
+## Overview
 This is a personal developer portfolio built to showcase my skills, projects, education, and contact details in a clean and modern interface. It highlights who I am, what I’ve built, and how to get in touch — all in one smooth, responsive, and interactive web application.
 
-## 🚀 Features
+## Features
 - Responsive design optimized for all devices
 - Smooth scrolling navigation
 - project showcase section
@@ -14,7 +14,7 @@ This is a personal developer portfolio built to showcase my skills, projects, ed
 - Professional and modern UI
 
 
-## 🛠 Technologies Used
+## Technologies Used
 
 - **Frontend:** React.js
 - **Styling:** Tailwind CSS
@@ -48,13 +48,13 @@ yarn run dev
 
 The app will be available at `http://localhost:5173`.
 
-## 📘 Usage
+## Usage
 
 - Customize the `components` folder to update personal content.
 - Replace the `Hero`, `Skills`, `Project`, `Education`, and `Contact` sections with your own data.
 - Update the styles or color schemes in `index.css` as needed.
 
-## 🤝 Development & Contribution
+## Development & Contribution
 
 If you want to contribute, fix a bug, or add a feature, you’re welcome to open a pull request.
 
@@ -64,14 +64,14 @@ If you want to contribute, fix a bug, or add a feature, you’re welcome to open
 4. Push to the branch: `git push origin feature/your-feature-name`
 5. Open a Pull Request
 
-## 🧾 Contribution Guidelines
+## Contribution Guidelines
 
 - Keep code clean and well-commented
 - Follow the existing project structure
 - Test changes before pushing
 - Provide a clear and concise PR message
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
