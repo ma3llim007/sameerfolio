@@ -20,11 +20,11 @@ const Hero = () => {
                                 <span>I'm</span>
                             </h2>
                             <TypeAnimation
-                                sequence={["Mohd Sameer", 2000, "Mern Stack Developer", 2000, "Full-Stack Web Developer", 2000, "React & Node.js Enthusiast", 2000]}
+                                sequence={["Mohd Sameer", 2000, "Mern Stack Developer", 2000, "Full-Stack Web Developer", 2000]}
                                 wrapper="h1"
                                 speed={50}
                                 repeat={Infinity}
-                                className="text-4xl md:text-5xl font-bold font-eagle-lake"
+                                className="text-2xl md:text-5xl font-bold font-eagle-lake"
                             />
                             <p className="text-base md:text-lg text-gray-300 leading-relaxed max-w-2xl">
                                 A passionate developer building scalable, high-performance, and user-friendly web applications using the MERN stack. I focus on clean code and modern UI to deliver

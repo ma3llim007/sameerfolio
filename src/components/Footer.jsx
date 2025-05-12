@@ -9,7 +9,7 @@ const Footer = () => {
             <Container>
                 <div className="relative">
                     <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-white/10 via-white/50 to-white/10 rounded" />
-                    <div className="pt-8 space-y-6 text-center flex justify-between">
+                    <div className="py-8 lg:pt-8 lg:pb-0 space-y-6 text-center flex flex-col lg:flex-row justify-between">
                         <div className="flex flex-wrap justify-center gap-4">
                             <a
                                 href="https://www.linkedin.com/in/mohdsameer-dev/"

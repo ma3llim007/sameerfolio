@@ -54,7 +54,7 @@ const Education = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                     <div>
                         <h2 className="text-3xl lg:text-4xl font-extrabold mb-6 underline underline-offset-8 decoration-blue-600 font-playfair text-gray-900 dark:text-white select-none">Education</h2>
-                        <div>
+                        <div className="space-y-2">
                             {data.education.map((edu) => (
                                 <TimelineItem key={edu.title} title={edu.title} subtitle={edu.institution} date={edu.date} description={edu.description} />
                             ))}
