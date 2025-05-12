@@ -1,8 +1,7 @@
 import { motion } from "framer-motion";
 import Container from "./Container";
 import { TypeAnimation } from "react-type-animation";
-import avatar256 from "../assets/avatar256.webp";
-import avatar160 from "../assets/avatar160.webp";
+import userAvatar from "../assets/userAvatar.webp";
 import { FaCloudDownloadAlt, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import resume from "../assets/mohd_sameer_resume.pdf";
 
@@ -79,9 +78,7 @@ const Hero = () => {
                         >
                             <img
                                 loading="lazy"
-                                src={avatar256}
-                                srcSet={`${avatar160} 160w, ${avatar256} 256w`}
-                                sizes="(max-width:768px) 160px, 256px"
+                                src={userAvatar}
                                 alt="Portrait of Mohd Sameer"
                                 className="w-40 h-40 md:w-64 md:h-64 object-cover rounded-full border-4 border-white shadow-xl"
                             />
