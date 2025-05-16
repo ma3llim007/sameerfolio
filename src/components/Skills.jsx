@@ -3,7 +3,7 @@ import Container from "./Container";
 
 const skillsCard = [
     { title: "Front-End", skills: ["HTML", "CSS", "Bootstrap", "TailwindCss", "JavaScript", "ReactJs", "React Router", "State Management", "Responsive Design"] },
-    { title: "Back-End", skills: ["Node.js", "Express.js", "MongoDB", "Mongoose", "RESTful APIs", "API Versioning", "Authentication (JWT)", "SQL", "Middleware"] },
+    { title: "Back-End", skills: ["Node.js", "Express.js", "MongoDB", "Mongoose", "RESTful APIs", "API Versioning", "Authentication (JWT)", "SQL", "Caching-Redis"] },
     { title: "Tools", skills: ["Git & GitHub", "VS Code", "Postman", "NPM / Yarn", "ESLint", "Prettier", "Chrome DevTools", "Figma", "Docker"] },
 ];
 
