@@ -3,7 +3,7 @@ import Container from "./Container";
 import { TypeAnimation } from "react-type-animation";
 import userAvatar from "../assets/userAvatar.webp";
 import { FaCloudDownloadAlt, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
-import resume from "../assets/mohd_sameer_resume.pdf";
+import resume from "../assets/mohd_sameer_fullstack_resume.pdf";
 
 const Hero = () => {
     return (
