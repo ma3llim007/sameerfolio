@@ -84,6 +84,7 @@ const Contact = () => {
                                     {...register("name", { required: "Name Is Required" })}
                                     type="text"
                                     placeholder="Your Name"
+                                    disabled={loading}
                                     className="w-full p-3 rounded bg-slate-900 border border-white/20 focus:outline-none"
                                 />
                                 {errors.name && <p className="text-red-500 font-bold mt-2 pl-1">{errors.name.message}</p>}
@@ -98,6 +99,7 @@ const Contact = () => {
                                         },
                                     })}
                                     type="email"
+                                    disabled={loading}
                                     placeholder="Your Email"
                                     className="w-full p-3 rounded bg-slate-900 border border-white/20 focus:outline-none"
                                 />
@@ -109,6 +111,7 @@ const Contact = () => {
                                 {...register("subject", { required: "Subject Is Required" })}
                                 type="text"
                                 placeholder="Subject"
+                                disabled={loading}
                                 className="w-full p-3 rounded bg-slate-900 border border-white/20 focus:outline-none"
                             />
                             {errors.subject && <p className="text-red-500 font-bold mt-2 pl-1">{errors.subject.message}</p>}
@@ -118,6 +121,7 @@ const Contact = () => {
                                 {...register("message", { required: "Message Cannot Be Empty" })}
                                 placeholder="Your Message"
                                 rows="5"
+                                disabled={loading}
                                 className="w-full p-3 rounded bg-slate-900 border border-white/20 focus:outline-none"
                             />
                             {errors.message && <p className="text-red-500 font-bold mt-2 pl-1">{errors.message.message}</p>}
