@@ -4,7 +4,7 @@ import { createPortal } from "react-dom";
 import { CiFileOn } from "react-icons/ci";
 import { FaBriefcase, FaEnvelope, FaGlobe, FaHome, FaTools } from "react-icons/fa";
 import { Link } from "react-scroll";
-import resume from "../assets/mohd_sameer_fullstack_resume.pdf";
+import resume from "../assets/mohd_sameer.pdf";
 
 const HeaderModel = ({ isOpen, onClose }) => {
     // Navigate items
